@@ -18,14 +18,14 @@ public class ModNCounter extends Counter{
 	
 	public ModNCounter(int m){
 		mod=m;
-		this.reset();
+		reset();
 	}
 	
 	public void increment(){
 		super.increment();
-		if (this.value()%mod==0)
+		if (value()%mod==0)
 		{
-			this.reset();
+			reset();
 		}
 	}
 }
