@@ -12,3 +12,6 @@
 /TracedPoint.class
 /test.class
 /SimpleDate.class
+/IntSequence.class
+/ResizableIntSequence.class
+/ResizableIntSequenceTest.class
