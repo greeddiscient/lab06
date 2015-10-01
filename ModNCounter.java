@@ -6,23 +6,26 @@ public class ModNCounter extends Counter{
 	public static void main(String[] args){
 		ModNCounter c= new ModNCounter(3);
 		c.increment();
-		System.out.println(c.myCount);
+		System.out.println(c.value());
 		c.reset();
 		c.increment();
-		System.out.println(c.myCount);
+		System.out.println(c.value());
 		c.increment();
 		c.increment();
 		c.increment();
-		System.out.println(c.myCount);
+		System.out.println(c.value());
 	}
 	
 	public ModNCounter(int m){
-		myCount= 0;
 		mod=m;
+		this.reset();
 	}
 	
 	public void increment(){
-		myCount+=1;
-		myCount%=mod;
+		super.increment();
+		if (this.value()%mod==0)
+		{
+			this.reset();
+		}
 	}
 }

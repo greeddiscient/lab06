@@ -1,6 +1,6 @@
 public class Counter {
 
-    int myCount;
+    private int myCount;
 
     public Counter() {
         myCount = 0;
