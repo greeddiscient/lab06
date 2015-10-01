@@ -15,6 +15,7 @@ public class TracedPoint extends Point {
     	String output= String.format("point moved from (%d,%d) to (%d,%d)", xfrom,yfrom,tox,toy);
     	System.out.println(output);
     }
+
     
     public static void main (String [ ] args) {
         TracedPoint p1 = new TracedPoint (5, 6);
@@ -26,5 +27,7 @@ public class TracedPoint extends Point {
 
         System.out.println ("p1 is " + p1);
         System.out.println ("p2 is " + p2);
+        
+       
     }
 }

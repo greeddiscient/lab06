@@ -1,6 +1,7 @@
 public abstract class Date {
 
     public abstract int dayOfYear();
+    public abstract Date nextDate();
     private int myDayOfMonth;
     private int myMonth;
     private int myYear;
@@ -22,7 +23,8 @@ public abstract class Date {
     public int year() {
         return myYear;
     }
-
+    
+    
     public String toString() {
         return "" + myDayOfMonth + "/" + myMonth + "/" + myYear;
     }

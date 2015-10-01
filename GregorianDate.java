@@ -15,5 +15,25 @@ public class GregorianDate extends Date {
         }
         return rtnValue + dayOfMonth();
     }
+    
+    public GregorianDate nextDate(){
+    	int d= dayOfMonth();
+    	int m= month();
+    	int y= year();
+    	if (d==monthLengths[m-1]){
+    		m+=1;
+    		d=1;
+    		if (m==13){
+    			
+    			m=1;
+    			y+=1;
+    		}
+    	}
+    	else{
+    		d+=1;
+    	}
+    	GregorianDate next= new GregorianDate(y,m,d);
+    	return next;
+    }
 
 }
